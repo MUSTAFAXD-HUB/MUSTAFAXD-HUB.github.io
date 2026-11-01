@@ -25,11 +25,7 @@
       border-bottom: 1px solid #202638;
     }
 
-    .logo {
-      font-size: 23px;
-      font-weight: bold;
-    }
-
+    .logo { font-size: 23px; font-weight: bold; }
     .logo span { color: #7c5cff; }
 
     nav a {
@@ -50,11 +46,7 @@
       font-size: 12px;
     }
 
-    h1 {
-      font-size: clamp(38px, 7vw, 68px);
-      margin: 20px 0;
-    }
-
+    h1 { font-size: clamp(38px, 7vw, 68px); margin: 20px 0; }
     h1 span { color: #9b83ff; }
 
     .hero p {
@@ -103,7 +95,10 @@
       border: 1px solid #252d42;
       border-radius: 16px;
       padding: 28px;
+      transition: 0.2s;
     }
+
+    .game:hover { border-color: #7858ff; }
 
     .game h2 { margin-top: 0; }
 
@@ -187,7 +182,7 @@
 
       <div class="games">
 
-        <!-- HI GAME -->
+        <!-- HI GAME CARD -->
         <article class="game">
 
           <div class="game-icon">👋</div>
@@ -209,15 +204,9 @@
             DOWNLOAD HI — ANDROID ↓
           </a>
 
-          <p>
-            <a class="button secondary" href="#games">
-              WINDOWS — COMING SOON
-            </a>
-          </p>
-
         </article>
 
-        <!-- MY FIRST GAME -->
+        <!-- MY FIRST GAME CARD -->
         <article class="game">
 
           <div class="game-icon">🎮</div>
@@ -227,8 +216,9 @@
           <h2>My First Game</h2>
 
           <p class="muted">
-            More details, screenshots, and updates will appear here
-            as development continues.
+            Welcome to our first test build! More details,
+            screenshots, and updates will appear here as
+            development continues.
           </p>
 
           <p class="muted">Windows PC · Android</p>
