@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Discover and download free test games from MTS Games.">
   <title>MTS Games | Play Beyond Limits</title>
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       background: #080b12;
       color: #f5f7ff;
       font-family: Arial, sans-serif;
     }
+
     header {
       display: flex;
       justify-content: space-between;
@@ -21,22 +24,46 @@
       padding: 22px 8%;
       border-bottom: 1px solid #202638;
     }
-    .logo { font-size: 23px; font-weight: bold; }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
     .logo span { color: #7c5cff; }
-    nav a { color: #c7cce0; text-decoration: none; margin-left: 20px; }
+
+    nav a {
+      color: #c7cce0;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
     .hero {
       padding: 90px 8%;
       text-align: center;
       background: radial-gradient(ellipse at top, #252052, #080b12 70%);
     }
+
     .tag {
       color: #b8aaff;
       letter-spacing: 3px;
       font-size: 12px;
     }
-    h1 { font-size: clamp(38px, 7vw, 68px); margin: 20px 0; }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      margin: 20px 0;
+    }
+
     h1 span { color: #9b83ff; }
-    .hero p { color: #b5bdd0; line-height: 1.8; max-width: 620px; margin: auto; }
+
+    .hero p {
+      color: #b5bdd0;
+      line-height: 1.8;
+      max-width: 620px;
+      margin: auto;
+    }
+
     .button {
       display: inline-block;
       padding: 14px 22px;
@@ -46,17 +73,55 @@
       font-weight: bold;
       background: #7858ff;
       color: white;
+      transition: 0.2s;
     }
-    .secondary { background: #171c2b; border: 1px solid #343b52; }
-    main { max-width: 1000px; margin: auto; padding: 45px 22px; }
+
+    .button:hover {
+      background: #967dff;
+      transform: translateY(-2px);
+    }
+
+    .secondary {
+      background: #171c2b;
+      border: 1px solid #343b52;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
     .game {
       background: #111625;
       border: 1px solid #252d42;
       border-radius: 16px;
       padding: 28px;
     }
+
     .game h2 { margin-top: 0; }
-    .muted { color: #aab3c8; line-height: 1.8; }
+
+    .game-icon {
+      height: 120px;
+      display: grid;
+      place-items: center;
+      font-size: 48px;
+      background: linear-gradient(135deg, #252052, #171c2b);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .muted {
+      color: #aab3c8;
+      line-height: 1.8;
+    }
+
     .status {
       display: inline-block;
       background: #1c3040;
@@ -65,18 +130,38 @@
       border-radius: 20px;
       font-size: 12px;
     }
+
+    .about { padding: 40px 5px; }
+
     footer {
       text-align: center;
       padding: 28px;
       color: #8790a7;
       border-top: 1px solid #202638;
     }
-    a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+
+    a:focus-visible {
+      outline: 2px solid white;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero { padding: 65px 6%; }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <div class="logo">MTS <span>GAMES</span></div>
+
     <nav>
       <a href="#games">Games</a>
       <a href="#about">About</a>
@@ -85,56 +170,96 @@
 
   <section class="hero">
     <div class="tag">WELCOME TO OUR WORLD</div>
+
     <h1>PLAY BEYOND <span>LIMITS.</span></h1>
-    <p>Discover our games, explore new worlds, and join us on the journey. Play our early test builds and help us improve!</p>
+
+    <p>
+      Discover our games, explore new worlds, and join us
+      on the journey. Play our early test builds and help us improve!
+    </p>
+
     <a class="button" href="#games">EXPLORE GAMES ↓</a>
   </section>
 
   <main>
-    <section id="games" class="game">
-      <span class="status">ANDROID TEST BUILD</span>
-      <h2>HI</h2>
-      <p class="muted">
-        Welcome to HI! Download the first Android test build
-        and try the game.
-      </p>
-      <p class="muted">Android · Windows coming soon</p>
 
-      <div id="downloads">
-        <h3>Download HI</h3>
-        <p class="muted">
-          Get the latest available Android release below.
-        </p>
+    <section id="games">
 
-        <p>
-          <a class="button"
-             href="https://github.com/MUSTAFAXD-HUB/MUSTAFAXD-HUB.github.io/releases/tag/hi-v1.0"
-             target="_blank"
-             rel="noopener noreferrer">
-            DOWNLOAD HI — ANDROID ↗
+      <div class="games">
+
+        <!-- HI GAME -->
+        <article class="game">
+
+          <div class="game-icon">👋</div>
+
+          <span class="status">ANDROID TEST BUILD</span>
+
+          <h2>HI</h2>
+
+          <p class="muted">
+            Welcome to HI! Try our first Android test build.
+            More updates coming soon.
+          </p>
+
+          <p class="muted">Android · Windows coming soon</p>
+
+          <a
+            class="button"
+            href="https://github.com/MUSTAFAXD-HUB/MUSTAFAXD-HUB.github.io/releases/download/hi-v1.0/HI.apk">
+            DOWNLOAD HI — ANDROID ↓
           </a>
-        </p>
 
-        <p>
-          <a class="button secondary" href="#downloads">
-            WINDOWS — COMING SOON
+          <p>
+            <a class="button secondary" href="#games">
+              WINDOWS — COMING SOON
+            </a>
+          </p>
+
+        </article>
+
+        <!-- MY FIRST GAME -->
+        <article class="game">
+
+          <div class="game-icon">🎮</div>
+
+          <span class="status">IN DEVELOPMENT</span>
+
+          <h2>My First Game</h2>
+
+          <p class="muted">
+            More details, screenshots, and updates will appear here
+            as development continues.
+          </p>
+
+          <p class="muted">Windows PC · Android</p>
+
+          <a class="button secondary" href="#games">
+            DOWNLOAD — COMING SOON
           </a>
-        </p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <section id="about" style="padding:40px 5px">
+    <section id="about" class="about">
+
       <h2>About MTS Games</h2>
+
       <p class="muted">
         An independent game development project focused on
         building exciting worlds and sharing the journey with players.
       </p>
+
     </section>
+
   </main>
 
   <footer>
     © 2026 MTS Games · Made with passion for gaming.
   </footer>
+
 </body>
 </html>
 ```
