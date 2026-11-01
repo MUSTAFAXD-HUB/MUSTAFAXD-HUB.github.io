@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,14 +65,22 @@
       border-radius: 20px;
       font-size: 12px;
     }
-    footer { text-align: center; padding: 28px; color: #8790a7; border-top: 1px solid #202638; }
+    footer {
+      text-align: center;
+      padding: 28px;
+      color: #8790a7;
+      border-top: 1px solid #202638;
+    }
     a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">MTS <span>GAMES</span></div>
-    <nav><a href="#games">Games</a><a href="#about">About</a></nav>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -84,25 +92,49 @@
 
   <main>
     <section id="games" class="game">
-      <span class="status">IN DEVELOPMENT</span>
-      <h2>My First Game</h2>
-      <p class="muted">Welcome to our first test build! More details, screenshots, and updates will appear here as development continues.</p>
-      <p class="muted">Windows PC · Android</p>
-      <a class="button" href="#downloads">DOWNLOAD OPTIONS ↓</a>
+      <span class="status">ANDROID TEST BUILD</span>
+      <h2>HI</h2>
+      <p class="muted">
+        Welcome to HI! Download the first Android test build
+        and try the game.
+      </p>
+      <p class="muted">Android · Windows coming soon</p>
+
       <div id="downloads">
-        <h3>Download the test build</h3>
-        <p class="muted">Downloads will be available here once the game files are uploaded.</p>
-        <p><a class="button secondary" href="#downloads">Windows — Coming Soon</a></p>
-        <p><a class="button secondary" href="#downloads">Android — Coming Soon</a></p>
+        <h3>Download HI</h3>
+        <p class="muted">
+          Get the latest available Android release below.
+        </p>
+
+        <p>
+          <a class="button"
+             href="https://github.com/MUSTAFAXD-HUB/MUSTAFAXD-HUB.github.io/releases/tag/hi-v1.0"
+             target="_blank"
+             rel="noopener noreferrer">
+            DOWNLOAD HI — ANDROID ↗
+          </a>
+        </p>
+
+        <p>
+          <a class="button secondary" href="#downloads">
+            WINDOWS — COMING SOON
+          </a>
+        </p>
       </div>
     </section>
 
     <section id="about" style="padding:40px 5px">
       <h2>About MTS Games</h2>
-      <p class="muted">An independent game development project focused on building exciting worlds and sharing the journey with players.</p>
+      <p class="muted">
+        An independent game development project focused on
+        building exciting worlds and sharing the journey with players.
+      </p>
     </section>
   </main>
 
-  <footer>© 2026 MTS Games · Made with passion for gaming.</footer>
+  <footer>
+    © 2026 MTS Games · Made with passion for gaming.
+  </footer>
 </body>
 </html>
+```
